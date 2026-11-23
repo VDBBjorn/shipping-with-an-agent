@@ -39,7 +39,7 @@ A plugin can't be edited, so the skill takes the values in `<angle brackets>` fr
 
 ## Why these files exist
 
-An agent writes most of the code in a production app I build in my own time. Each post is about one thing that got harder because of that, and what I did about it.
+An agent writes most of the code in a production app I build next to my client work. Each post is about one thing that got harder because of that, and what I did about it.
 
 ### 1. I no longer know what to click through
 
