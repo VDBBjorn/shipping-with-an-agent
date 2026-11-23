@@ -22,13 +22,13 @@ The files are small and meant to be changed. Take one, put in your own commands,
 
 ## Just want to try it?
 
-The four skills are also a Claude Code plugin, so you can try them as they are without touching your repo:
+The four skills are also a Claude Code plugin, so you can try them as they are without touching your repo. In a Claude Code session (v2.1.275 or later):
 
-```bash
-claude plugin install shipping-with-an-agent --marketplace VDBBjorn/shipping-with-an-agent
+```text
+/plugin install shipping-with-an-agent --marketplace VDBBjorn/shipping-with-an-agent
 ```
 
-On an older version of Claude Code, add the marketplace first:
+From your shell, or on an older version, add the marketplace first:
 
 ```bash
 claude plugin marketplace add VDBBjorn/shipping-with-an-agent
@@ -39,7 +39,7 @@ A plugin can't be edited, so the skill takes the values in `<angle brackets>` fr
 
 ## Why these files exist
 
-An agent writes most of the code in my side project. Each post is about one thing that got harder because of that, and what I did about it.
+An agent writes most of the code in a production app I build in my own time. Each post is about one thing that got harder because of that, and what I did about it.
 
 ### 1. I no longer know what to click through
 
