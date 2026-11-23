@@ -1,0 +1,16 @@
+{
+  "name": "bjorntocode",
+  "owner": {
+    "name": "Bjorn Vandenbussche",
+    "url": "https://bjorntocode.com"
+  },
+  "description": "The skills from the blog series \"Shipping with an agent\", as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "shipping-with-an-agent",
+      "source": "./",
+      "description": "Four skills for building and shipping with a coding agent: work, verify, review and journeys.",
+      "category": "engineering"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "shipping-with-an-agent",
+  "description": "Four skills for building and shipping with a coding agent: a definition of done with evidence, a check in the place a user would notice, a review by two fresh agents, and end-to-end goals the agent replays and repairs.",
+  "author": {
+    "name": "Bjorn Vandenbussche",
+    "url": "https://bjorntocode.com"
+  },
+  "homepage": "https://bjorntocode.com/posts/20261124_keep_your_e2e_tests",
+  "repository": "https://github.com/VDBBjorn/shipping-with-an-agent",
+  "license": "MIT",
+  "keywords": ["skills", "code-review", "end-to-end", "evidence", "shipping"],
+  "skills": [
+    "./evidence/skills/work",
+    "./evidence/skills/verify",
+    "./review/skills/review",
+    "./e2e/skills/journeys"
+  ]
+}
