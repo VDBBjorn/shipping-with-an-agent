@@ -8,7 +8,7 @@ This folder goes with the post [A review that learns from its own findings](http
 2. Register it in `.claude/settings.json`. [hooks/settings.example.json](hooks/settings.example.json) shows the entry. It also registers the second hook from the post, the one that blocks pushes to main. That hook is in [../shipping/hooks/no-push-main.mjs](../shipping/hooks/no-push-main.mjs). Remove its entry if you don't use it.
 3. Open `guard.mjs` and go through the `rules` list. Delete the rules you don't agree with and change the file patterns to match your repo. Each rule is one line: where it applies, what it looks for, and the message the agent gets.
 4. Test the hook from a terminal with the commands under "Try the hook" below.
-5. Copy [skills/review/SKILL.md](skills/review/SKILL.md) to `.claude/skills/review/SKILL.md`. Fill in where your issues and your rules live. Or install the plugin from the [root README](../README.md), which holds the same skill.
+5. Copy [skills/review/SKILL.md](skills/review/SKILL.md) to `.claude/skills/review/SKILL.md`. Fill in where your issues and your rules live.
 6. Ask the agent for a review when a change is done. The skill takes it from there.
 
 If you take one file, take the hook. It's small, it runs on every edit, and it works from the first day.

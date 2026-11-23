@@ -4,7 +4,7 @@ This folder goes with the post [Evidence or it didn't happen](https://bjorntocod
 
 ## How to use it
 
-1. Copy [skills/work](skills/work/SKILL.md) to `.claude/skills/work/` and [skills/verify](skills/verify/SKILL.md) to `.claude/skills/verify/`. The `work` folder has three files: the skill and its two playbooks. Or install the plugin from the [root README](../README.md), which holds the same skills. With the plugin you can't change the done-contract in step 2, and the values of step 3 go into your rules file.
+1. Copy [skills/work](skills/work/SKILL.md) to `.claude/skills/work/` and [skills/verify](skills/verify/SKILL.md) to `.claude/skills/verify/`. The `work` folder has three files: the skill and its two playbooks.
 2. Open `work/SKILL.md` and read the done-contract. It is four lines. Change them until they say what "done" means in your project.
 3. Open `verify/SKILL.md` and fill in the "where to check" table: your start command, your local test mailbox, your languages, your seeded users.
 4. Add one line to your rules file: every task that changes code starts with the `work` skill. [../map/AGENTS.md](../map/AGENTS.md) has that line.

@@ -7,7 +7,7 @@ This folder goes with the post [Keep your E2E tests, let an agent carry them](ht
 1. Read [goals/README.md](goals/README.md) and write one goal for the flow you can least afford to break. Use [goals/example-invoice-paid.md](goals/example-invoice-paid.md) as a model.
 2. Let an agent walk that goal in a real browser and save what it did as a route. A route is a Playwright script with two functions: `act()` does what the user does, `check()` proves the goal's pass lines. [goals/example-invoice-paid.route.mjs](goals/example-invoice-paid.route.mjs) shows the shape.
 3. Write a small runner that replays the routes without any AI. The section "What the runner does" below lists what it needs.
-4. Copy [skills/journeys/SKILL.md](skills/journeys/SKILL.md) to `.claude/skills/journeys/SKILL.md` and fill in your commands. Or install the plugin from the [root README](../README.md), which holds the same skill. From then on the agent can replay the routes and repair one that lost its way.
+4. Copy [skills/journeys/SKILL.md](skills/journeys/SKILL.md) to `.claude/skills/journeys/SKILL.md` and fill in your commands. From then on the agent can replay the routes and repair one that lost its way.
 5. Only when the replay is stable, look at [personas.md](personas.md) and [nightly/README.md](nightly/README.md) for the exploring part. Build the judge ([nightly/judge-rules.md](nightly/judge-rules.md)) before you automate the walking.
 
 If you take one file, take [goals/README.md](goals/README.md). A goal is useful on day one, even if a person walks it by hand.

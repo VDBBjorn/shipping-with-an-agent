@@ -6,27 +6,36 @@ The files are small and meant to be changed. Take one, put in your own commands,
 
 ## How to use it
 
-1. **Get the skills.** A skill is a Markdown file with instructions for one kind of task. Pick one of these two ways. If you take both, you have every skill twice.
-
-   As a Claude Code plugin. You get all four skills, and you can't edit them:
-
-   ```bash
-   claude plugin install shipping-with-an-agent --marketplace VDBBjorn/shipping-with-an-agent
-   ```
-
-   Or as files you own. Copy a skill folder to `.claude/skills/` in your repo:
+1. **Copy the skills you want.** A skill is a Markdown file with instructions for one kind of task. Copy a skill folder to `.claude/skills/` in your repo:
 
    ```bash
    git clone https://github.com/VDBBjorn/shipping-with-an-agent
    cp -r shipping-with-an-agent/evidence/skills/work <your repo>/.claude/skills/
    ```
 
-2. **Give the skills your project's values.** A skill asks for a few things in `<angle brackets>`: the start command, a local URL, where the glossary is. In copied files, replace them in the skill. With the plugin, write them in your rules file (`AGENTS.md` or `CLAUDE.md`). The skill looks there and asks you for what is missing.
-3. **Copy the hooks, scripts and templates you want.** They aren't in the plugin, because each one has to be changed to fit your repo.
+2. **Give the skills your project's values.** A skill asks for a few things in `<angle brackets>`: the start command, a local URL, where the glossary is. Replace them in the copied file. In `work`, rewrite the four lines of the done-contract until they say what "done" means in your project.
+3. **Copy the hooks, scripts and templates you want.**
    - a hook goes to `.claude/hooks/`, and is registered in `.claude/settings.json`
    - a script goes to `scripts/`
    - a template goes wherever your repo keeps that kind of document
 4. **Start with one file.** Each folder's README says which one I'd pick first.
+
+## Just want to try it?
+
+The four skills are also a Claude Code plugin, so you can try them as they are without touching your repo:
+
+```bash
+claude plugin install shipping-with-an-agent --marketplace VDBBjorn/shipping-with-an-agent
+```
+
+On an older version of Claude Code, add the marketplace first:
+
+```bash
+claude plugin marketplace add VDBBjorn/shipping-with-an-agent
+claude plugin install shipping-with-an-agent@bjorntocode
+```
+
+A plugin can't be edited, so the skill takes the values in `<angle brackets>` from your rules file (`AGENTS.md` or `CLAUDE.md`) and asks you for what is missing. The hooks, scripts and templates aren't in the plugin. If you keep it, copy the files as above and remove the plugin, or you have every skill twice.
 
 ## Why these files exist
 
