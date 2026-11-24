@@ -95,11 +95,12 @@ else
 fi
 pr=$(gh pr view "$branch" --json url -q .url)
 
-git push origin "$sha:refs/heads/main"
-echo "ship: $sha is on main. The record: $pr"
-
 repo=$(gh repo view --json nameWithOwner -q .nameWithOwner)
 gh api "repos/$repo/statuses/$sha" \
   -f state=success \
   -f context=signoff \
-  -f description="Local checks passed on $(hostname -s): $passed" >/dev/null
+  -f description="Local checks passed on $(hostname -s): $passed" >/dev/null \
+  || stop "the sign-off could not be recorded, so nothing was pushed to main."
+
+git push origin "$sha:refs/heads/main"
+echo "ship: $sha is on main. The record: $pr"

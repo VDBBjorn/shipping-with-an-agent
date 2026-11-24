@@ -47,18 +47,18 @@ In order:
 3. **It works out which checks the change needs**, by giving the changed files to `select-checks.sh`.
 4. **It runs those checks locally**: the web build and tests, the .NET build and tests, and the end-to-end run.
 5. **It pushes the branch and opens or updates its pull request**, with your file as the description. The title is `TITLE`, or the subject of the branch's first commit.
-6. **It fast-forwards main** to that exact commit.
-7. **It records a sign-off**: a status on the commit that says which checks passed, and on which machine.
+6. **It records a sign-off**: a status on the commit that says which checks passed, and on which machine.
+7. **It fast-forwards main** to that exact commit.
 
 If a step fails, the script stops and nothing reaches main.
 
-If main moved while the checks ran, the push in step 6 is refused, because it is not a force push. Run the script again: it rebases and checks the new combination.
+If main moved while the checks ran, the push in step 7 is refused, because it is not a force push. Run the script again: it rebases and checks the new combination.
 
 Three things you should know before you use it:
 
 - **The push of the branch is a force push.** After a rebase the branch has new commits, so step 5 overwrites the branch on GitHub. Main is never force pushed.
 - **GitHub marks the pull request as merged by itself**, because main now contains the pull request's commit. No CI runs on the pull request.
-- **The exit code is the gate.** Nothing on GitHub's side blocks a push to main unless you turn on branch protection. The status is the record that the gate passed.
+- **The script is the gate.** Nothing on GitHub's side blocks a push to main unless you turn on branch protection. So main only moves once the checks are green and the sign-off is on the commit. If the sign-off can't be recorded, nothing ships.
 
 ## What the script assumes
 
@@ -158,9 +158,9 @@ The script opens the pull request after the checks pass, so nobody reviews on it
 - **One ship at a time.** Two ships on one machine compete for the same ports. Wait for the first one.
 - **A second run on main.** If CI still runs on main before a deploy, it repeats checks the script already ran. I keep mine: it is the last check before production, and it runs on another machine.
 
-## Sketch: the regression gate
+## The regression gate
 
-This part is a sketch. The post says the script doesn't yet replay the key user journeys, and that I'm adding that gate now. It isn't in `ship.sh`.
+The skeleton leaves this part out, because replaying the routes depends on your test stack. This is how it fits in.
 
 The idea: the saved routes for the flows that bring in the money (see [../e2e](../e2e/README.md)) are replayed on every ship, after the other checks and before the push. A red route stops the ship. The gate never repairs a route. A repair is a separate task with its own review.
 
