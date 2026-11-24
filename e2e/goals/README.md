@@ -1,6 +1,6 @@
 # The goal format
 
-A goal is a short Markdown file that says who does what, and what counts as done. It is the part of an end-to-end test that I write myself, as described in [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261124_keep_your_e2e_tests). It has no selectors and no steps. The route next to it holds those, and an agent writes and repairs the route.
+A goal is a short Markdown file that says who does what, and what counts as done. It is the part of an end-to-end test that I write myself, as described in [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261027_keep_your_e2e_tests). It has no selectors and no steps. The route next to it holds those, and an agent writes and repairs the route.
 
 ## How to use it
 

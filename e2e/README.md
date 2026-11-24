@@ -1,6 +1,6 @@
 # e2e: goals, routes, personas and the nightly run
 
-This folder goes with the post [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261124_keep_your_e2e_tests). It holds the format I use to describe an end-to-end test as a goal, two example goals, a Playwright script for one of them, the personas that explore the app at night, and the skill that tells an agent how to replay and repair the scripts.
+This folder goes with the post [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261027_keep_your_e2e_tests). It holds the format I use to describe an end-to-end test as a goal, two example goals, a Playwright script for one of them, the personas that explore the app at night, and the skill that tells an agent how to replay and repair the scripts.
 
 ## How to use it
 

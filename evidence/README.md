@@ -1,6 +1,6 @@
 # evidence: a definition of done, and proof for it
 
-This folder goes with the post [Evidence or it didn't happen](https://bjorntocode.com/posts/20261208_evidence_or_it_didnt_happen). It holds the skill every code change starts with, its two playbooks for a bug and a feature, the skill that says where to check a change, and a script that puts screenshots and videos in a pull request.
+This folder goes with the post [Evidence or it didn't happen](https://bjorntocode.com/posts/20261110_evidence_or_it_didnt_happen). It holds the skill every code change starts with, its two playbooks for a bug and a feature, the skill that says where to check a change, and a script that puts screenshots and videos in a pull request.
 
 ## How to use it
 

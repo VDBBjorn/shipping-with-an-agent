@@ -1,6 +1,6 @@
 # map: a short rules file and the documents it points to
 
-This folder goes with the post [Your agent needs a map, not a manual](https://bjorntocode.com/posts/20261215_your_agent_needs_a_map). It holds a template for the rules file an agent reads at the start of every session, and example formats for the three documents that file points to: a glossary, a decisions log and a table of named test data.
+This folder goes with the post [Your agent needs a map, not a manual](https://bjorntocode.com/posts/20261117_your_agent_needs_a_map). It holds a template for the rules file an agent reads at the start of every session, and example formats for the three documents that file points to: a glossary, a decisions log and a table of named test data.
 
 ## How to use it
 

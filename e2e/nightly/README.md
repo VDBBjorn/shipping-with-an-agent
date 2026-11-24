@@ -1,6 +1,6 @@
 # The nightly run (sketch)
 
-This is a sketch of the nightly run from [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261124_keep_your_e2e_tests): a scheduled job in which agents explore the app as personas, a separate agent judges what they found, and I get a short list in the morning. My own version is a set of scripts tied to my stack, so this folder describes the steps and the rules. It doesn't ship a job you can run as it is.
+This is a sketch of the nightly run from [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261027_keep_your_e2e_tests): a scheduled job in which agents explore the app as personas, a separate agent judges what they found, and I get a short list in the morning. My own version is a set of scripts tied to my stack, so this folder describes the steps and the rules. It doesn't ship a job you can run as it is.
 
 ## How to use it
 

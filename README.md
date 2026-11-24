@@ -1,6 +1,6 @@
 # Shipping with an agent
 
-The skills, hooks, scripts and templates I use to build and ship software with an AI coding agent. They go with my blog series "Shipping with an agent", which starts with [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261124_keep_your_e2e_tests). The series has five posts, and each post has a folder here with the files it describes.
+The skills, hooks, scripts and templates I use to build and ship software with an AI coding agent. They go with my blog series "Shipping with an agent", which starts with [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261027_keep_your_e2e_tests). The series has five posts, and each post has a folder here with the files it describes.
 
 The files are small and meant to be changed. Take one, put in your own commands, and delete the rules you don't agree with.
 
@@ -50,7 +50,7 @@ An agent writes most of the code in a production app I build next to my client w
 - [The goal format](e2e/goals/README.md), with [an example goal](e2e/goals/example-invoice-paid.md) and [its script](e2e/goals/example-invoice-paid.route.mjs)
 - [`journeys`](e2e/skills/journeys/SKILL.md), the skill for replaying and repairing
 
-Post: [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261124_keep_your_e2e_tests). Folder: [e2e](e2e/README.md).
+Post: [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261027_keep_your_e2e_tests). Folder: [e2e](e2e/README.md).
 
 ### 2. The agent reviews its own work
 
@@ -61,7 +61,7 @@ Post: [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/pos
 - [`review`](review/skills/review/SKILL.md), the skill that briefs the two reviewers and gives the verdict
 - [`guard.mjs`](review/hooks/guard.mjs), a hook that refuses an edit when it breaks a rule
 
-Post: [A review that learns from its own findings](https://bjorntocode.com/posts/20261201_review_that_learns). Folder: [review](review/README.md).
+Post: [A review that learns from its own findings](https://bjorntocode.com/posts/20261103_review_that_learns). Folder: [review](review/README.md).
 
 ### 3. "Done" means the tests pass
 
@@ -72,7 +72,7 @@ Post: [A review that learns from its own findings](https://bjorntocode.com/posts
 - [`work`](evidence/skills/work/SKILL.md), the skill every code change starts with
 - [`verify`](evidence/skills/verify/SKILL.md), the skill that says where to check each kind of change
 
-Post: [Evidence or it didn't happen](https://bjorntocode.com/posts/20261208_evidence_or_it_didnt_happen). Folder: [evidence](evidence/README.md).
+Post: [Evidence or it didn't happen](https://bjorntocode.com/posts/20261110_evidence_or_it_didnt_happen). Folder: [evidence](evidence/README.md).
 
 ### 4. The agent doesn't know its way around
 
@@ -83,7 +83,7 @@ Post: [Evidence or it didn't happen](https://bjorntocode.com/posts/20261208_evid
 - [`AGENTS.md`](map/AGENTS.md), the rules file as a template
 - The formats for [a glossary](map/glossary.example.md), [a decisions log](map/decisions-log.example.md) and [a seed table](map/seed-table.example.md)
 
-Post: [Your agent needs a map, not a manual](https://bjorntocode.com/posts/20261215_your_agent_needs_a_map). Folder: [map](map/README.md).
+Post: [Your agent needs a map, not a manual](https://bjorntocode.com/posts/20261117_your_agent_needs_a_map). Folder: [map](map/README.md).
 
 ### 5. The pull request has one job left
 
@@ -94,7 +94,7 @@ Post: [Your agent needs a map, not a manual](https://bjorntocode.com/posts/20261
 - [`ship.sh`](shipping/scripts/ship.sh), the script
 - [`pr-template.md`](shipping/pr-template.md), the shape of the description
 
-Post: [Pull requests as receipts](https://bjorntocode.com/posts/20261222_pull_requests_as_receipts). Folder: [shipping](shipping/README.md).
+Post: [Pull requests as receipts](https://bjorntocode.com/posts/20261124_pull_requests_as_receipts). Folder: [shipping](shipping/README.md).
 
 ## Reference
 

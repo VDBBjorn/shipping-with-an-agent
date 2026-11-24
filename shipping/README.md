@@ -1,6 +1,6 @@
 # shipping: one script to main, and the pull request as the record
 
-This folder goes with the post [Pull requests as receipts](https://bjorntocode.com/posts/20261222_pull_requests_as_receipts). It holds a skeleton of the script that is my only way to main, the script that picks which checks a change needs, a hook that stops the agent from pushing to main any other way, and the template for the pull request description.
+This folder goes with the post [Pull requests as receipts](https://bjorntocode.com/posts/20261124_pull_requests_as_receipts). It holds a skeleton of the script that is my only way to main, the script that picks which checks a change needs, a hook that stops the agent from pushing to main any other way, and the template for the pull request description.
 
 ## How to use it
 

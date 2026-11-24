@@ -1,6 +1,6 @@
 # Personas
 
-A persona is a login, a language, a screen size and a way of working. At night, an agent takes on one persona and walks a goal in a real browser, as described in [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261124_keep_your_e2e_tests). This file holds the format, three personas for the invented example app, and a template for the test data sheet each persona gets.
+A persona is a login, a language, a screen size and a way of working. At night, an agent takes on one persona and walks a goal in a real browser, as described in [Keep your E2E tests, let an agent carry them](https://bjorntocode.com/posts/20261027_keep_your_e2e_tests). This file holds the format, three personas for the invented example app, and a template for the test data sheet each persona gets.
 
 ## How to use it
 

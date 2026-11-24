@@ -1,6 +1,6 @@
 # review: two fresh reviewers and a hook
 
-This folder goes with the post [A review that learns from its own findings](https://bjorntocode.com/posts/20261201_review_that_learns). It holds the skill that lets two agents review a change they didn't write, and a hook that refuses an edit when it breaks a rule I've already decided on.
+This folder goes with the post [A review that learns from its own findings](https://bjorntocode.com/posts/20261103_review_that_learns). It holds the skill that lets two agents review a change they didn't write, and a hook that refuses an edit when it breaks a rule I've already decided on.
 
 ## How to use it
 
